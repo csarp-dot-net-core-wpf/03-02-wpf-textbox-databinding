@@ -90,6 +90,8 @@ namespace SquareAreaDistrictWPFProject
                 // B1.15 Kezeljük a többi kivételt
                 catch (Exception ex)
                 {
+                    // B1.19 Más kivételek esetén a felhasználónak megjelenítjük a hibaüzenetet a gombnál                    
+                    btnShowResult.ToolTip = ex.Message;
                 }
             }
         }

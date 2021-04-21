@@ -13,7 +13,10 @@
         <TextBlock x:Name="tbSuareSide"  Margin="20 10 20 0">A négyzet oldala:</TextBlock>
         <!-- B1.04 Adatbeviteli mező (négyzet oldala) -->
         <!-- Ezt a vezérlőt használjuk leggyakrabban a felhasználóval való interakcióra. A felhasználó számára szöveges beviteli  lehetőség.-->
-        <TextBox x:Name="txtSide" Margin="20 0 20 30" />
+
+        <!-- B1.20 Ha a felhasználó lenyom egy billentyűt a TextBox-ban eltüntethetjük a hibaüzenetet-->
+        <!-- KeyDown (gomb lenyomva) esetményt használjuk -->
+        <TextBox x:Name="txtSide" Margin="20 0 20 30" KeyDown="txtSide_KeyDown" />
         <!-- B1.05 Gomb amely az eredményt mutatja meg -->
         <!-- B1.06 Gombnak click eseménye van-->
         <Button x:Name="btnShowResult"  Margin="30 10 30 0" Click="btnShowResult_Click">Mutasd az eredményt</Button>

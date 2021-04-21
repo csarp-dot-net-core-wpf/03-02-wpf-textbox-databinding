@@ -95,5 +95,10 @@ namespace SquareAreaDistrictWPFProject
                 }
             }
         }
+
+        private void txtSide_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
     }
 }

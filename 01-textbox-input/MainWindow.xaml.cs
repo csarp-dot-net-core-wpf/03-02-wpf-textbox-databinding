@@ -50,7 +50,7 @@ namespace SquareAreaDistrictWPFProject
             // B1.10 A gomb lenyomásakor kiolvassuk a felhasználó által beírt adatot
             // A felhasználó által megadott érték a TextBox vezérlő Text tulajdonságában van
             string sideString = txtSide.Text;
-            
+
             // B1.11 A kiolvasott értéket valós számmá konvertáljuk
             double side = 0.0;
             // A TryParse true értéket ad vissza, ha sikerül a kovertálás, ezért használható elágazás
@@ -62,6 +62,10 @@ namespace SquareAreaDistrictWPFProject
                 txtSide.BorderBrush = Brushes.Red;
                 // A felhasználónak megjelenítünk egy hibaüzenetet, ha ráviszi az egeret a TextBox-ra
                 txtSide.ToolTip = "Nem megfelelő formátumú valós számot adott meg!";
+            }
+            else
+            {
+                // B1.13 Ha sikeres a konvertálás
             }
         }
     }

@@ -50,7 +50,15 @@ namespace SquareAreaDistrictWPFProject
             // B1.10 A gomb lenyomásakor kiolvassuk a felhasználó által beírt adatot
             // A felhasználó által megadott érték a TextBox vezérlő Text tulajdonságában van
             string sideString = txtSide.Text;
+            
+            // B1.11 A kiolvasott értéket valós számmá konvertáljuk
+            double side = 0.0;
+            // A TryParse true értéket ad vissza, ha sikerül a kovertálás, ezért használható elágazás
+            // out azért kell, mert a side paraméter értéke a TryParse metódus meghívása során megváltozik
+            if (!double.TryParse(sideString, out side))
+            {
 
+            }
         }
     }
 }

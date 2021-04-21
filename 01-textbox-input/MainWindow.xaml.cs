@@ -101,6 +101,8 @@ namespace SquareAreaDistrictWPFProject
             // B1.21 A beviteli mező szinét és feliratát alaphelyzetbe állítjuk
             txtSide.BorderBrush = Brushes.Black;
             txtSide.ToolTip = string.Empty;
+            // B1.22 A gomb feliratát ha van eltüntetjük
+            btnShowResult.ToolTip = string.Empty;
         }
     }
 }

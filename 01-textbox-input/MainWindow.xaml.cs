@@ -98,7 +98,9 @@ namespace SquareAreaDistrictWPFProject
 
         private void txtSide_KeyDown(object sender, KeyEventArgs e)
         {
-
+            // B1.21 A beviteli mező szinét és feliratát alaphelyzetbe állítjuk
+            txtSide.BorderBrush = Brushes.Black;
+            txtSide.ToolTip = string.Empty;
         }
     }
 }

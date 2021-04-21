@@ -72,7 +72,16 @@ namespace SquareAreaDistrictWPFProject
                     // B1.14 A négyzet oldalát megváltoztatjuk, a kivételeket kezeljük
                     square.Side = side;
                 }
+                // B1.15 Kezeljük a saját kivételt
+                catch (SqueraSideCannotBeNagativOrZero sse)
+                {
 
+                }
+                // B1.15 Kezeljük a többi kivételt
+                catch (Exception ex)
+                {
+                }
+            }
         }
     }
 }

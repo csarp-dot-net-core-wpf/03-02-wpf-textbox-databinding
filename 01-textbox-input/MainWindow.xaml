@@ -9,6 +9,9 @@
         <!-- B1.01 Ablak cím és keret -->
     <!-- B1.02 StackPanel elrendezés -->
     <StackPanel>
-
+        <!-- B1.03 Feliratok (textblock) -->
+        <TextBlock x:Name="tbSuareSide"  Margin="20 10 20 0">A négyzet oldala:</TextBlock>
+        <TextBlock x:Name="tbDistrict" Margin="30 10 30 0">A négyzet kerülete:</TextBlock>
+        <TextBlock x:Name="tbArea" Margin="30 10 30 0">A négyzet területe:</TextBlock>
     </StackPanel>
 </Window>

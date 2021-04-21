@@ -15,7 +15,8 @@
         <!-- Ezt a vezérlőt használjuk leggyakrabban a felhasználóval való interakcióra. A felhasználó számára szöveges beviteli  lehetőség.-->
         <TextBox x:Name="txtSide" Margin="20 0 20 30" />
         <!-- B1.05 Gomb amely az eredményt mutatja meg -->
-        <Button x:Name="btnShowResult"  Margin="30 10 30 0">Mutasd az eredményt</Button>
+        <!-- B1.06 Gombnak click eseménye van-->
+        <Button x:Name="btnShowResult"  Margin="30 10 30 0" Click="btnShowResult_Click">Mutasd az eredményt</Button>
         
         <TextBlock x:Name="tbDistrict" Margin="30 10 30 0">A négyzet kerülete:</TextBlock>
         <TextBlock x:Name="tbArea" Margin="30 10 30 0">A négyzet területe:</TextBlock>

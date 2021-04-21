@@ -24,5 +24,10 @@ namespace SquareAreaDistrictWPFProject
         {
             InitializeComponent();
         }
+
+        private void btnShowResult_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -28,6 +29,15 @@ namespace SquareAreaDistrictWPFProject
 
         public MainWindow()
         {
+            // B1.08 kivétel kezeléssel négyzet létrehozás
+            int side = 1;
+            try
+            {
+                // B1.08 Négyzet konsturktor kivételt dobhat, ha side<=0. Ezér van try-catch
+                square = new Square(side);
+            }
+            catch (Exception e)
+            { }
             InitializeComponent();
         }
 

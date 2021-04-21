@@ -78,7 +78,11 @@ namespace SquareAreaDistrictWPFProject
                 // B1.15 Kezeljük a saját kivételt
                 catch (SqueraSideCannotBeNagativOrZero sse)
                 {
-
+                    // B1.17 Saját kivétel esetén
+                    // A TextBox beviteli mező keretét pirosra festjük
+                    txtSide.BorderBrush = Brushes.Red;
+                    // A felhasználónak megjelenítünk egy hibaüzenetet, ha ráviszi az egeret a TextBox-ra
+                    txtSide.ToolTip = sse.Message;
                 }
                 // B1.15 Kezeljük a többi kivételt
                 catch (Exception ex)

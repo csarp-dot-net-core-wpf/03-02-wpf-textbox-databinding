@@ -57,7 +57,11 @@ namespace SquareAreaDistrictWPFProject
             // out azért kell, mert a side paraméter értéke a TryParse metódus meghívása során megváltozik
             if (!double.TryParse(sideString, out side))
             {
-
+                // B1.12 Ha sikertelen a konvertálás hibaüzenetet jelenítünk meg
+                // A TextBox beviteli mező keretét pirosra festjük
+                txtSide.BorderBrush = Brushes.Red;
+                // A felhasználónak megjelenítünk egy hibaüzenetet, ha ráviszi az egeret a TextBox-ra
+                txtSide.ToolTip = "Nem megfelelő formátumú valós számot adott meg!";
             }
         }
     }

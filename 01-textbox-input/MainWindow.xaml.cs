@@ -47,6 +47,9 @@ namespace SquareAreaDistrictWPFProject
 
         private void btnShowResult_Click(object sender, RoutedEventArgs e)
         {
+            // B1.10 A gomb lenyomásakor kiolvassuk a felhasználó által beírt adatot
+            // A felhasználó által megadott érték a TextBox vezérlő Text tulajdonságában van
+            string sideString = txtSide.Text;
 
         }
     }

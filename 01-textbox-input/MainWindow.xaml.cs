@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+// B1.06 A model mappában lévő kódot elérhetővé tesszük
+using oop.model;
+
 namespace SquareAreaDistrictWPFProject
 {
     /// <summary>

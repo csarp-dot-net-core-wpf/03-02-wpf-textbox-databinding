@@ -23,6 +23,9 @@ namespace SquareAreaDistrictWPFProject
     /// </summary>
     public partial class MainWindow : Window
     {
+        // B1.07 Négyzet adattag
+        private Square square;
+
         public MainWindow()
         {
             InitializeComponent();

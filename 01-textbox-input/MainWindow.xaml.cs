@@ -71,6 +71,9 @@ namespace SquareAreaDistrictWPFProject
                 {
                     // B1.14 A négyzet oldalát megváltoztatjuk, a kivételeket kezeljük
                     square.Side = side;
+                    // B1.16 Sikeres adatbevitel esetén az eredményt megjelenítjük
+                    tbDistrict.Text = "A négyzet kerülete: " + square.District.ToString() + " méter.";
+                    tbArea.Text = "A négyzet területe: " + square.Area.ToString() + " négyzetméter.";
                 }
                 // B1.15 Kezeljük a saját kivételt
                 catch (SqueraSideCannotBeNagativOrZero sse)

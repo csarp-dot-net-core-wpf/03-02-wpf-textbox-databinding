@@ -66,7 +66,13 @@ namespace SquareAreaDistrictWPFProject
             else
             {
                 // B1.13 Ha sikeres a konvertálás
-            }
+                // 
+                try
+                {
+                    // B1.14 A négyzet oldalát megváltoztatjuk, a kivételeket kezeljük
+                    square.Side = side;
+                }
+
         }
     }
 }

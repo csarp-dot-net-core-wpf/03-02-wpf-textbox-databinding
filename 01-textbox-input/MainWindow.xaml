@@ -11,6 +11,10 @@
     <StackPanel>
         <!-- B1.03 Feliratok (textblock) -->
         <TextBlock x:Name="tbSuareSide"  Margin="20 10 20 0">A négyzet oldala:</TextBlock>
+        <!-- B1.04 Adatbeviteli mező (négyzet oldala) -->
+        <!-- Ezt a vezérlőt használjuk leggyakrabban a felhasználóval való interakcióra. A felhasználó számára szöveges beviteli  lehetőség.-->
+        <TextBox x:Name="txtSide" Margin="20 0 20 30" />
+        
         <TextBlock x:Name="tbDistrict" Margin="30 10 30 0">A négyzet kerülete:</TextBlock>
         <TextBlock x:Name="tbArea" Margin="30 10 30 0">A négyzet területe:</TextBlock>
     </StackPanel>

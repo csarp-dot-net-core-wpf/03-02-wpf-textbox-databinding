@@ -39,6 +39,10 @@ namespace SquareAreaDistrictWPFProject
             catch (Exception e)
             { }
             InitializeComponent();
+            // B1.09 Az oldal kezdőértéke a beviteli mezőbe
+            // A TextBox vezérlő text (szöveg) mezőjében program induláskor belekerül az "1" kezdő érték
+            // (tesztelje)
+            txtSide.Text = side.ToString();
         }
 
         private void btnShowResult_Click(object sender, RoutedEventArgs e)

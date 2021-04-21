@@ -83,6 +83,9 @@ namespace SquareAreaDistrictWPFProject
                     txtSide.BorderBrush = Brushes.Red;
                     // A felhasználónak megjelenítünk egy hibaüzenetet, ha ráviszi az egeret a TextBox-ra
                     txtSide.ToolTip = sse.Message;
+                    // B1.18 Az eddigi eredményeket töröljük
+                    tbDistrict.Text = "A négyzet kerülete: ";
+                    tbArea.Text = "A négyzet területe: ";
                 }
                 // B1.15 Kezeljük a többi kivételt
                 catch (Exception ex)
